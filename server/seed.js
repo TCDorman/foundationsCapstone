@@ -34,7 +34,7 @@ module.exports = {
         last_name VARCHAR(3000) NOT NULL 
     ); 
     
-    CREATE TABLE back_and_bis ( 
+    CREATE TABLE back_and_bi ( 
         back_and_bi_id SERIAL PRIMARY KEY,
         workout_name VARCHAR(100),
         workout_description VARCHAR (4000)
@@ -45,14 +45,7 @@ module.exports = {
         workout_name VARCHAR (100),
         workout_description VARCHAR (4000)
     ); 
-        
-        back_squat VARCHAR(3000) NOT NULL, 
-        front_squat VARCHAR(3000) NOT NULL, 
-        romanian_deadlift VARCHAR(3000) NOT NULL, 
-        walking_lunges VARCHAR(3000) NOT NULL, 
-        reverse_lunge VARCHAR(3000) NOT NULL, 
-        lateral_lunge VARCHAR(3000) NOT NULL, 
-        step_up VARCHAR(3000) NOT NULL 
+
       
     CREATE TABLE chest_and_tri ( 
         chest_and_tri_id SERIAL PRIMARY KEY, 
@@ -100,7 +93,7 @@ module.exports = {
         'exercise performed in a prone position by raising and lowering the body 
     with the straightening and bending of the arms while keeping the back straight and 
     supporting the body on the hands and toes. preform as many as you can before muscle 
-    failure') 
+    failure'); 
     
     insert into shoulders (workout_name, workout_description)
 
@@ -108,7 +101,7 @@ module.exports = {
         'exercise characterized by lifting a pair of dumbbells away from your body in 
     an external rotation. Lateral raises work the trapezius muscle in your upper back as well as the 
     deltoid muscle group in your shoulders—particularly the anterior and lateral deltoids. 
-    preform 10-12 reps at a weight that does not cause you to use bad form')
+    preform 10-12 reps at a weight that does not cause you to use bad form');
 
     insert into shoulders (workout_name, workout_description)
     
@@ -116,7 +109,7 @@ module.exports = {
         'Stand with your body upright and core muscles braced, looking straight ahead. 
     Hold the bar on your upper chest, gripping it with hands just wider than shoulder-width apart. 
     Press the bar directly overhead. Don"t tilt your hips forward during the move.
-    preform 10-12 reps at a weight that does not cause you to use bad form')
+    preform 10-12 reps at a weight that does not cause you to use bad form');
 
     insert into shoulders(workout_name, workout_description)
 
@@ -136,19 +129,19 @@ module.exports = {
     values ('deadlift', 
         'exercise in which a loaded barbell or bar is lifted off the ground to the level of the hips, torso 
     perpendicular to the floor, before being placed back on the ground. 
-    It is one of the three powerlifting exercises, along with the squat and bench press.')
+    It is one of the three powerlifting exercises, along with the squat and bench press.');
 
     insert into back_and_bi (workout_name, workout_description)
 
     values ('bent_over_row', 
         'Lift the bar from the rack, bend forward at the hips, and keep the back straight with a slight bend 
     in the knees. Lower the bar towards the floor until the elbows are completely straight, and keep the back flat as the
-    bar is pulled towards the belly button. Then slowly lower the bar to the starting position and repeat.')
+    bar is pulled towards the belly button. Then slowly lower the bar to the starting position and repeat.');
 
     insert into back_and_bi (workout_name, workout_description)
 
     values('pull_up', 
-        'an exercise involving raising oneself with ones arms by pulling up against a horizontal bar fixed above ones head.')
+        'an exercise involving raising oneself with ones arms by pulling up against a horizontal bar fixed above ones head.');
 
     insert into back_and_bi (workout_name, workout_description)
 
@@ -157,25 +150,25 @@ module.exports = {
     and hold the handle or cable. Move your shoulders back and down. Brace your core.
     Exhale. Bend your elbows to pull the handle or cable, keeping your elbows tucked in and your back neutral. Pause for 1 second.
     Inhale and slowly extend your arms, counting to 3.
-    Complete one set of 12 to 15 reps.')
+    Complete one set of 12 to 15 reps.');
 
     insert into back_and_bi (workout_name, workout_description)
 
     values('barbell_curl', 
         'Perform barbell curls by grabbing a barbell with a shoulder-width supinated grip (palms facing towards your body).
-    Hinge your elbows, and lift the barbell toward your chest.')
+    Hinge your elbows, and lift the barbell toward your chest.');
 
     insert into back_and_bi (workout_name, workout_description)
 
     values('chin_up', 
         'exercise in which one hangs by the hands from a support (such as a horizontal bar) and 
-    pulls oneself up until the chin is level with the support specifically : such an exercise done with the palms facing inward — compare pull-up.')
+    pulls oneself up until the chin is level with the support specifically : such an exercise done with the palms facing inward — compare pull-up.');
 
     insert into back_and_bi (workout_name, workout_description)
 
     values('hammer_curl', 
         'Hammer curls are a variation of a standard bicep curl where your palms point towards each other 
-    instead of facing upwards')
+    instead of facing upwards');
 
     insert into back_and_bi (workout_name, workout_description)
 
@@ -190,7 +183,7 @@ module.exports = {
     values('incline_push_up', 
         'Your upper body is elevated with an exercise box or other piece of equipment. ... While traditional pushups 
     work your chest, arms, and shoulders, incline pushups take some of the pressure 
-    off your arms and shoulders to give you a solid chest workout.')
+    off your arms and shoulders to give you a solid chest workout.');
 
     insert into chest_and_tri (workout_name, workout_description)
     
@@ -201,14 +194,14 @@ module.exports = {
     Grasp the bar, palms facing away from you, with your fingers wrapped around it.
     Exhale, squeeze your core, and push the barbell off the rack and up toward the ceiling using your pectoral muscles. Straighten your arms out in the contracted position, and squeeze your chest.
     Inhale and bring the barbell down slowly to your chest, again about an inch away. It should take you twice as long to bring the barbell down as it does to push it up.
-    Explode back up to your starting position using your pectoral muscles. Do 12 repetitions')
+    Explode back up to your starting position using your pectoral muscles. Do 12 repetitions');
     
     insert into chest_and_tri (workout_name, workout_description)
 
     values('decline_bench_press', 
         'In a decline bench press, the bench is set to 15 to 30 degrees on a decline. This angle places your 
     upper body on a downward slope, which activates the lower pectoral muscles as you push weights away from 
-    your body.')
+    your body.');
 
     insert into chest_and_tri (workout_name, workout_description)
 
@@ -221,27 +214,27 @@ module.exports = {
     arm to be in line with your upper chest the whole time. Your arms should be at a 45-degree angle and 
     tucked into your sides. Hold this position for one count at the bottom of this movement and, with 
     one big exhale, push the bar back up to your starting position. Lock your arms, hold, and come down slowly.
-    Do 12 repetitions and then place the bar back on the rack.')
+    Do 12 repetitions and then place the bar back on the rack.');
     
     insert into chest_and_tri (workout_name, workout_description)
 
     values('bench_dips', 
         'bodyweight exercise designed to activate muscles in your arms, shoulders, and chest. They are also 
     known as triceps dips. Perform bench dips by sitting on a bench or elevated surface with your lower body 
-    extended to the floor in front of you.')
+    extended to the floor in front of you.');
     
     insert into chest_and_tri (workout_name, workout_description)
 
     values('dumbbell_tricep_extension', 
         'Lift the dumbbell until your arms are fully extended with palms facing the roof and elbows pointing 
     forward. This is the start position. Bending at the elbows and squeezing your triceps, slowly lower the 
-    dumbbell behind your head. Slowly return to start position and repeat.')
+    dumbbell behind your head. Slowly return to start position and repeat.');
     
     insert into chest_and_tri (workout_name, workout_description)
 
     values('push_ups', 
         'exercise performed in a prone position by raising and lowering the body with the straightening and 
-    bending of the arms while keeping the back straight and supporting the body on the hands and toes.')
+    bending of the arms while keeping the back straight and supporting the body on the hands and toes.');
 
     insert into chest_and_tri (workout_name, workout_description)
     
@@ -257,14 +250,14 @@ module.exports = {
     values('back_squat', 
         'Sit back into hips and keep the back straight and the chest up, squatting down so the hips are below 
     the knees. From the bottom of the squat, press feet into the ground and push hips forward to return to 
-    the top of the standing position.')
+    the top of the standing position.');
 
     insert into leg_day (workout_name, workout_description)
     
     values('front_squat', 
         'A front squat is a squat that is performed while holding a barbell except, unlike with a back squat, 
     the bar is held in front of the chest. This places more force on the upper body while still working the 
-    glutes, hamstrings, and hips.')
+    glutes, hamstrings, and hips.');
     
     insert into leg_day (workout_name, workout_description)
 
@@ -276,27 +269,27 @@ module.exports = {
     maintaining a flat back. Keep the knees positioned over the ankles. Once you have assumed a position in 
     which the hamstrings are contracted, the back is flat, and the barbell is a few inches below the knee, stand 
     up, keeping the barbell close to your body. At the top of the movement, contract the upper back, core, and glutes 
-    by flexing from the middle of the back to the buttocks (glutes). Repeat for repetitions.')
+    by flexing from the middle of the back to the buttocks (glutes). Repeat for repetitions.');
 
     insert into leg_day (workout_name, workout_description)
 
     values('walking_lunges', 
         'Walking lunges are a variation on the static lunge exercise. Instead of standing back upright after performing
     a lunge on one leg, as you would in a static bodyweight lunge, you “walk” forward by lunging out with the 
-    other leg. The movement continues for a set number of reps')
+    other leg. The movement continues for a set number of reps');
 
     insert into leg_day (workout_name, workout_description)
 
     values('reverse_lunge',    
         'exercise that works muscle groups throughout your lower body. Perform reverse lunges by taking a step 
     backwards, keeping your upper body aligned and your back straight. Lower yourself enough for your front leg 
-    to be at a 90-degree angle.')
+    to be at a 90-degree angle.');
 
     insert into leg_day (workout_name, workout_description)
 
     values('lateral_lunge', 
         'exercise moving in the frontal instead of saggital plane, emphasizing hip and adductor strength and stability. 
-    Execution. With a barbell on your back, take a very wide stance with the toes turned out.')
+    Execution. With a barbell on your back, take a very wide stance with the toes turned out.');
 
     insert into leg_day (workout_name, workout_description)
 
