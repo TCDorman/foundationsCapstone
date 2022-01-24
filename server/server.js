@@ -1,11 +1,12 @@
 const express = require('express')
 const path = require('path');
 const cors = require('cors')
+const app = express();
+const {seed} = require('./seed');
+const { getFromShoulders } = require('./controller');
+
 
 app.use(cors());
-const app = express();
-
-
 app.use(express.json());
 app.use(express.static('public'));
 
@@ -13,8 +14,11 @@ app.get('/', function(req, res) {
     res.sendFile(path.join(__dirname, '../index.html'))
 });
 
-const port = process.env.PORT || 4005 ; 
+const {SERVER_PORT} = process.env || 4005 ; 
 
-app.listen(port, () => {
-    console.log(`Listening on port ${port}`)
+app.listen(SERVER_PORT, () => {
+    console.log(`Listening on port ${SERVER_PORT}`)
 });
+
+app.post('/seed', seed)
+app.get('/shoulders', getFromShoulders)
