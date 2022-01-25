@@ -8,27 +8,35 @@
     <title id="login">Login Page</title>
 </head>
 <body>
-    <h1 class="welcome">Welcome Back!</h1>
-    <h2>Please Sign in to your account</h2>
+
     <div class="dropdown">
-        <button onclick="myfunction()" class="dropbtn">Menu</button>
+        <button class="dropbtn">Menu</button>
         <div id="myDropdown" class="dropdown-content hide" >
             <a href="index.html">Home</a>
             <a href="login.html">Login</a>
             <a href="register.html">Registration</a>
             <a href="accountPage.html">Account Page</a>
         </div>
+
+<div class='group'>
+        <div class='header'>
+        <h1 class="welcome">Welcome Back!</h1>
+        <h2>Please Sign in to your account</h2>
+        </div>
+
+
     <div class="alert-box">
         <p class="alert">msg</p>
     </div>
     <div class=form> 
-        <h1 class=heading>Login</h1>
+        <h1 class="login">Login</h1>
         <input type="email" placeholder="email" autocomplete="off" class="email" required>
         <input type="password" placeholder="password" autocomplete="off" class="password" required>
         <a href="login.html"> <button class="submit-btn">log in</button> </a>
         <a href="register.html" class="link">don't have an account? Register one</a>
         <a href="index.html" class="link">return to the homepage</a>
     </div>
+</div>
     
     <script src="form.js"></script>
 </body>

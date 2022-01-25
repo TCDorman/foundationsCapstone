@@ -1,10 +1,10 @@
-const form = [...document.querySelector('.form').children];
-let one = 1
-form.forEach((item, one) => {
-    setTimeout(() => {
-        item.style.opacity = one;
-    }, i*100);
-})
+// const form = [...document.querySelector('.form').children];
+// let one = 1
+// form.forEach((item, one) => {
+//     setTimeout(() => {
+//         item.style.opacity = one;
+//     }, i*100);
+// })
 
 
 let dropbtn = document.getElementsByClassName('dropbtn')[0]
