@@ -1,9 +1,17 @@
 // const { default: axios } = require("axios")//this auto popped do i need it?
 
+const message = document.querySelector('#message')
 const shoulderbtn = document.getElementById('shoulders')
 const chestandtribtn = document.getElementById('chestandtri')
 const legsbtn = document.getElementById('legs')
 const backandbibtn = document.getElementById('backandbi')
+
+
+let dropbtn = document.getElementsByClassName('dropbtn')[0]
+let dropdown = document.getElementsByClassName('dropdown-content')[0]
+dropbtn.addEventListener('click', () => {
+    dropdown.classList.toggle('hide')
+})
 
 function addRandomShoulder (array) {
     const workout = document.createElement('li')
@@ -15,7 +23,19 @@ function addRandomShoulder (array) {
         <br> 
         <li>${ex.workout_description}</li>`
         document.body.appendChild(exOne)
+        
+        const resetBtn = document.createElement('button')
+        resetBtn.textContent = 'Reset'
+    
+        document.body.appendChild(resetBtn)
+        resetBtn.addEventListener('click', resetWorkout)
     })
+}
+
+function resetWorkout(workout) {
+    array.length.delete()
+    message.textContent = `${ex.workout_name} reset`
+    console.log(array.length)
 }
 
 
@@ -30,6 +50,8 @@ function randomShoulder (array) {
     arr.push(array[placeHolderTwo])
     console.log(arr)
     addRandomShoulder(arr)
+
+
 
 }
 function getShoulderWorkout () {

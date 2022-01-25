@@ -4,3 +4,68 @@ body{
     background-position: center;
     font-family: Arial, Helvetica, sans-serif;
 }
+
+h1{
+    position: flex;
+    background-color: whitesmoke;
+    text-align: Center;
+    background-size: auto;
+}
+
+button {
+    position: flex;
+    
+
+}
+
+h2{
+    position: flex;
+    text-align: center;
+    background-color: whitesmoke;
+    background-size: auto;
+}
+
+div{
+    position: flex;
+    text-align: center;
+    background-color:whitesmoke;
+}
+
+.dropbtn{ 
+    background-color: gray;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: black;
+    cursor: pointer;
+}
+
+.dropdown{
+    position: relative;
+    display: inline-block
+}
+
+.dropdown-content {
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8=x 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.show {
+    display: block;
+}
+
+.hide {
+    display: none;
+}
