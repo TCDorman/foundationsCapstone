@@ -22,6 +22,6 @@ app.listen(SERVER_PORT, () => {
 
 app.post('/seed', seed)
 app.get('/shoulders', getFromShoulders)
-app.get('chestandtri', getFromChestAndTri)
-app.get('legs', getFromLegs)
-app.get('backandbi', getFromBackAndBi)
+app.get('/chestandtri', getFromChestAndTri)
+app.get('/legs', getFromLegs)
+app.get('/backandbi', getFromBackAndBi)

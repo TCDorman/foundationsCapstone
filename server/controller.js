@@ -33,7 +33,7 @@ module.exports = {
 
     getFromLegs: (req, res) => {
         sequelize.query(`
-        SELECT * FROM legs
+        SELECT * FROM leg_day
         `)
         .then(dbRes => res.status(200).send(dbRes[0]))
         .catch(err => console.log(err))
@@ -41,7 +41,7 @@ module.exports = {
 
     getFromBackAndBi: (req, res) => {
         sequelize.query(`
-        SELECT * FROM back_and_bis
+        SELECT * FROM back_and_bi
         `)
         .then(dbRes => res.status(200).send(dbRes[0]))
         .catch(err => console.log(err))

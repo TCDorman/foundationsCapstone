@@ -13,6 +13,12 @@ dropbtn.addEventListener('click', () => {
     dropdown.classList.toggle('hide')
 })
 
+function resetWorkout(event) {
+    let target = event.target.parentNode
+    target.parentNode.removeChild(target)
+}
+
+
 function addRandomShoulder (array) {
     const workout = document.createElement('li')
     const shoulderWorkout = document.createElement('ul')
@@ -25,18 +31,13 @@ function addRandomShoulder (array) {
         document.body.appendChild(exOne)
         
         const resetBtn = document.createElement('button')
-        resetBtn.textContent = 'Reset'
+        resetBtn.textContent = 'Remove'
     
-        document.body.appendChild(resetBtn)
+        exOne.appendChild(resetBtn)
         resetBtn.addEventListener('click', resetWorkout)
     })
 }
 
-function resetWorkout(workout) {
-    array.length.delete()
-    message.textContent = `${ex.workout_name} reset`
-    console.log(array.length)
-}
 
 
 function randomShoulder (array) {
@@ -73,6 +74,12 @@ function addRandomChestAndTri (array) {
         <br> 
         <li>${ex.workout_description}</li>`
         document.body.appendChild(exOne)
+
+        const resetBtn = document.createElement('button')
+        resetBtn.textContent = 'Remove'
+    
+        exOne.appendChild(resetBtn)
+        resetBtn.addEventListener('click', resetWorkout)
     })
 }
 
@@ -86,10 +93,10 @@ function randomChestAndTri (array) {
         placeHolderTwo = Math.floor(Math.random() * array.length)
     } 
     if (placeHolderThree === placeHolder || placeHolderTwo) {
-        placeHolderThree = Math.floor(math.random() * array.length)
+        placeHolderThree = Math.floor(Math.random() * array.length)
     }
     if (placeHolderFour === placeHolder || placeHolderTwo || placeHolderThree) {
-        placeHolderFour = Math.floor(math.random() * array.length)
+        placeHolderFour = Math.floor(Math.random() * array.length)
     }
     arr.push(array[placeHolder])
     arr.push(array[placeHolderTwo])
@@ -120,11 +127,17 @@ function addRandomLegs (array) {
         <br> 
         <li>${ex.workout_description}</li>`
         document.body.appendChild(exOne)
+
+        const resetBtn = document.createElement('button')
+        resetBtn.textContent = 'Remove'
+    
+        exOne.appendChild(resetBtn)
+        resetBtn.addEventListener('click', resetWorkout)
     })
 }
 
 
-function randomLegs (obj) {
+function randomLegs (array) {
     let arr = []
     let placeHolder = Math.floor(Math.random() * array.length)
     let placeHolderTwo = Math.floor(Math.random() * array.length)
@@ -134,10 +147,10 @@ function randomLegs (obj) {
         placeHolderTwo = Math.floor(Math.random() * array.length)
     } 
     if (placeHolderThree === placeHolder || placeHolderTwo) {
-        placeHolderThree = Math.floor(math.random() * array.length)
+        placeHolderThree = Math.floor(Math.random() * array.length)
     }
     if (placeHolderFour === placeHolder || placeHolderTwo || placeHolderThree) {
-        placeHolderFour = Math.floor(math.random() * array.length)
+        placeHolderFour = Math.floor(Math.random() * array.length)
     }
     arr.push(array[placeHolder])
     arr.push(array[placeHolderTwo])
@@ -158,7 +171,7 @@ function getLegsWorkout () {
 
 function addRandomBackAndBi (array) {
     const workout = document.createElement('li')
-    const legsWorkout = document.createElement('ul')
+    const backAndBiWorkout = document.createElement('ul')
 
     array.forEach((ex) => {
         const exOne = document.createElement('div')
@@ -166,11 +179,17 @@ function addRandomBackAndBi (array) {
         <br> 
         <li>${ex.workout_description}</li>`
         document.body.appendChild(exOne)
+
+        const resetBtn = document.createElement('button')
+        resetBtn.textContent = 'Remove'
+    
+        exOne.appendChild(resetBtn)
+        resetBtn.addEventListener('click', resetWorkout)
     })
 }
 
 
-function randomBackAndBi(obj) {
+function randomBackAndBi(array) {
     let arr = []
     let placeHolder = Math.floor(Math.random() * array.length)
     let placeHolderTwo = Math.floor(Math.random() * array.length)
@@ -180,10 +199,10 @@ function randomBackAndBi(obj) {
         placeHolderTwo = Math.floor(Math.random() * array.length)
     } 
     if (placeHolderThree === placeHolder || placeHolderTwo) {
-        placeHolderThree = Math.floor(math.random() * array.length)
+        placeHolderThree = Math.floor(Math.random() * array.length)
     }
     if (placeHolderFour === placeHolder || placeHolderTwo || placeHolderThree) {
-        placeHolderFour = Math.floor(math.random() * array.length)
+        placeHolderFour = Math.floor(Math.random() * array.length)
     }
     arr.push(array[placeHolder])
     arr.push(array[placeHolderTwo])
