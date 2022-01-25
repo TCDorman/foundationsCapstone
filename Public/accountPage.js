@@ -56,7 +56,7 @@ function randomShoulder (array) {
 
 }
 function getShoulderWorkout () {
-    axios.get(`http://localhost:4005/shoulders`)
+    axios.get(`/shoulders`)
     .then(res => {
         
         randomShoulder(res.data)
@@ -108,7 +108,7 @@ function randomChestAndTri (array) {
 }
 
 function getChestAndTriWorkout () {
-    axios.get(`http://localhost:4005/chestandtri`) //**** not sure if ending is correct with chestandtri */
+    axios.get(`/chestandtri`) //**** not sure if ending is correct with chestandtri */
     .then(res => {
         randomChestAndTri(res.data)
     })
@@ -161,7 +161,7 @@ function randomLegs (array) {
 }
 
 function getLegsWorkout () {
-    axios.get(`http://localhost:4005/legs`) 
+    axios.get(`/legs`) 
     .then(res => {
         randomLegs(res.data)
     })
@@ -213,7 +213,7 @@ function randomBackAndBi(array) {
 }
 
 function getBackAndBiWorkout () {
-    axios.get(`http://localhost:4005/backandbi`) 
+    axios.get(`/backandbi`) 
     .then(res => {
         randomBackAndBi(res.data)
     })
