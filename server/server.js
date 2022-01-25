@@ -14,10 +14,10 @@ app.get('/', function(req, res) {
     res.sendFile(path.join(__dirname, '../index.html'))
 });
 
-const {SERVER_PORT} = process.env || 4005 ; 
+const PORT = process.env.PORT || 4005 ; 
 
-app.listen(SERVER_PORT, () => {
-    console.log(`Listening on port ${SERVER_PORT}`)
+app.listen(PORT, () => {
+    console.log(`Listening on port ${PORT}`)
 });
 
 app.post('/seed', seed)
