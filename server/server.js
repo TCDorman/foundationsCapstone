@@ -3,7 +3,7 @@ const path = require('path');
 const cors = require('cors')
 const app = express();
 const {seed} = require('./seed');
-const { getFromShoulders } = require('./controller');
+const { getFromShoulders, getFromChestAndTri, getFromLegs, getFromBackAndBi } = require('./controller');
 
 
 app.use(cors());
@@ -22,3 +22,6 @@ app.listen(SERVER_PORT, () => {
 
 app.post('/seed', seed)
 app.get('/shoulders', getFromShoulders)
+app.get('chestandtri', getFromChestAndTri)
+app.get('legs', getFromLegs)
+app.get('backandbi', getFromBackAndBi)

@@ -22,7 +22,7 @@ module.exports = {
         .catch(err => console.log(err))
     },
 
-    getFromChestAndTris: (req, res) =>{
+    getFromChestAndTri: (req, res) =>{
         sequelize.query(`
         SELECT * FROM chest_and_tri
         `)
@@ -39,7 +39,7 @@ module.exports = {
         .catch(err => console.log(err))
     },
 
-    getFromBackAndBis: (req, res) => {
+    getFromBackAndBi: (req, res) => {
         sequelize.query(`
         SELECT * FROM back_and_bis
         `)
