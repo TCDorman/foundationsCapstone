@@ -29,7 +29,3 @@ function getInfo() {
         } 
     }
 }
-
-function login() {
-    var username = 
-}
